@@ -1,0 +1,19 @@
+{
+  "name": "size-in-bytes",
+  "version": "1.0.0",
+  "description": "Simple NodeJS function that returns the number of bytes expressed from a string.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --check-leaks --bail --no-exit --reporter spec test/",
+    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --check-leaks --no-exit --reporter dot test/",
+    "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --check-leaks --no-exit --reporter spec test/"
+  },
+  "devDependencies": {
+    "expect": "^1.20.2",
+    "istanbul": "0.4.5",
+    "mocha": "^2.5.3"
+  },
+  "keywords": [],
+  "author": "Alberto Schiabel <alberto.schiabel@gmail.com> (https://github.com/jkomyno)",
+  "license": "MIT"
+}
